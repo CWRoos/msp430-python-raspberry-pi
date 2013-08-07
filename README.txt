@@ -4,6 +4,25 @@
 
 Modified for raspberry pi (GertBoard)
 
+install with "sudo python setup.py install"
+
+If not yet, also install python modules; RPi.GPIO and serial
+
+and install the MSP430 raspberry pi (gcc) toolchain
+
+On the GertBoard patch area put a 20 pins IC socket, 2 10 pins breakpin
+a condensator and a resistor, see schematics.
+
+Put a MSP430 (MSP430G2553) in the socket
+
+Wire the gertboard (see the image files)
+
+Go to folder ; msp430-python-raspberry-pi/examples/asm/led
+
+type; sudo msp430-bsl -p /dev/ttyAMA0 -e led.titxt
+
+and the LED should blink....
+
 The python-msp430-tools are a collection of tools related to the MSP430
 embedded processor.
 
