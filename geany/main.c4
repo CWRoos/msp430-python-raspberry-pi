@@ -1,0 +1,14 @@
+{fileheader}
+
+#include  "msp430g2553.h" 
+
+
+void main(void)
+{
+
+
+  WDTCTL = WDTPW + WDTHOLD;                 // Stop WDT
+  
+  
+}
+
